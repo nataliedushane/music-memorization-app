@@ -1,0 +1,30 @@
+<!-- home.html -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Music Memorization Home</title>
+  
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <h1>Music Memorization Home</h1>
+  <subtitle>Select Your Music Type</subtitle>
+    <p></p>
+    <p></p>
+
+  <div class="menu">
+    <button onclick="goToPlayer('traditionals')">Traditional Music</button>
+    <button onclick="goToPlayer('lotTunes')">Lot Tunes</button>
+    <!-- Add more types if needed -->
+  </div>
+
+  <script>
+    function goToPlayer(type) {
+      // Send the selection to the player page
+      window.location.href = `player.html?type=${type}`;
+    }
+  </script>
+</body>
+</html>
